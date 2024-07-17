@@ -1,7 +1,7 @@
 from pathlib import Path
 from unittest import TestCase
 
-from src.rules.valid_numeral_repetition_limit import RuleValidNumeralRepetitionLimit
+from src.validator_rules.valid_numeral_repetition_limit import RuleValidNumeralRepetitionLimit
 from src.utils import Utils
 
 
@@ -9,7 +9,7 @@ class TestValidNumeralRepetitionLimit(TestCase):
     def setUp(self):
         self.limit = 3
         roman_numeral_map_file_path = Path.resolve(Path(__file__).parent.parent.parent.resolve() / 'src/data'
-                                                                                            '/roman_numeral_map.json')
+                                                                                                   '/roman_numeral_map.json')
         self.utils = Utils()
         self.rule = RuleValidNumeralRepetitionLimit(self.limit, roman_numeral_map_file_path, self.utils)
 

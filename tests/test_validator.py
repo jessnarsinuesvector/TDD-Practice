@@ -1,6 +1,6 @@
 from unittest import TestCase, mock
 
-from src.rules.rule import Rule
+from src.validator_rules.rule import Rule
 from src.validator import Validator
 
 class TestValidator(TestCase):

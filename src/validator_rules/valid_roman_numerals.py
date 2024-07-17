@@ -1,7 +1,7 @@
 import json
 import logging
 
-from src.rules.rule import Rule
+from src.validator_rules.rule import Rule
 from src.utils import Utils
 
 

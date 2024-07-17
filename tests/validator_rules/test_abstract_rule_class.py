@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from src.rules.rule import Rule
+from src.validator_rules.rule import Rule
 
 class TestAbstractRuleClass(TestCase):
     def setUp(self):
