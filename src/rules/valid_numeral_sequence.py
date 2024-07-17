@@ -1,14 +1,15 @@
 import logging
 
 from src.rules.rule import Rule
-from src.utils import load_numeral_map
+from src.utils import Utils
 
 
-class ValidNumeralSequence(Rule):
-    def __init__(self, map_file_path: str):
+class RuleValidNumeralSequence(Rule):
+    def __init__(self, map_file_path: str, utils: Utils):
         super()
+        self.utils = utils
         self.description = "Should follow valid Roman Numeral sequence."
-        self.numeral_map: dict = load_numeral_map(map_file_path)
+        self.numeral_map: dict = self.utils.load_numeral_map(map_file_path)
         self.numeral_map = dict(sorted(self.numeral_map.items(), key=lambda item: item[1], reverse=True))
         self.log = logging.getLogger(__name__)
         self.restricted_sequences = [ "VX", "LL" ]

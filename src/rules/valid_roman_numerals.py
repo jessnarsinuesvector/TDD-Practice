@@ -2,15 +2,16 @@ import json
 import logging
 
 from src.rules.rule import Rule
-from src.utils import load_numeral_map
+from src.utils import Utils
 
 
 class RuleValidRomanNumerals(Rule):
 
-    def __init__(self, map_file_path: str):
+    def __init__(self, map_file_path: str, utils: Utils):
         super()
+        self.utils = utils
         self.description = "Should only contain valid Roman Numerals."
-        self.numeral_map: dict = load_numeral_map(map_file_path)
+        self.numeral_map: dict = self.utils.load_numeral_map(map_file_path)
         self.log = logging.getLogger(__name__)
 
     def is_valid(self, input_str: str):

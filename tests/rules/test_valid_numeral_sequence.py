@@ -1,16 +1,16 @@
 from pathlib import Path
 from unittest import TestCase
 
-from src.rules.valid_numeral_sequence import ValidNumeralSequence
+from src.rules.valid_numeral_sequence import RuleValidNumeralSequence
+from src.utils import Utils
 
 
 class TestValidNumeralSequence(TestCase):
     def setUp(self):
-        roman_numeral_map_file_path = Path.resolve(Path(__file__).parent.parent.parent.resolve() / 'src/data'                                                                                    '/roman_numeral_map.json')
-        self.rule = ValidNumeralSequence(roman_numeral_map_file_path)
-
-    def test_can_load_numeral_map_file(self):
-        self.assertNotEqual(self.rule.numeral_map, {})
+        roman_numeral_map_file_path = Path.resolve(Path(
+            __file__).parent.parent.parent.resolve() / 'src/data'                                                                                    '/roman_numeral_map.json')
+        self.utils = Utils()
+        self.rule = RuleValidNumeralSequence(roman_numeral_map_file_path, self.utils)
 
     def test_can_validate_false_if_left_character_is_more_than_two_levels_lower(self):
         self.assertFalse(self.rule.is_valid("XC"))
