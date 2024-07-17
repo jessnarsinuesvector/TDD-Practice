@@ -2,14 +2,7 @@ import json
 import logging
 
 from src.rules.rule import Rule
-
-
-def _load_numeral_map(map_file_path: str) -> dict:
-    try:
-        with open(map_file_path) as f:
-            return json.loads(f.read())
-    except Exception as e:
-        raise Exception("Cannot load roman numeral map! {}".format(map_file_path))
+from src.utils import load_numeral_map
 
 
 class RuleValidRomanNumerals(Rule):
@@ -17,7 +10,7 @@ class RuleValidRomanNumerals(Rule):
     def __init__(self, map_file_path: str):
         super()
         self.description = "Should only contain valid Roman Numerals."
-        self.numeral_map: dict = _load_numeral_map(map_file_path)
+        self.numeral_map: dict = load_numeral_map(map_file_path)
         self.log = logging.getLogger(__name__)
 
     def is_valid(self, input_str: str):
