@@ -14,8 +14,7 @@ class TestValidNumeralSequence(TestCase):
         self.rule = RuleValidNumeralSequence(roman_numeral_map_file_path, self.utils)
 
     def test_can_validate_false_if_left_character_is_more_than_two_numeral_levels_lower(self):
-        for i in ["IM", "XC", "XM", "IXL"]:
-            print(i)
+        for i in ["IM", "XC", "XM", "CMD", "IXL"]:
             self.assertFalse(self.rule.is_valid(i))
 
     def test_can_validate_false_if_sequence_for_anything_that_has_a_numerical_value_of_5_is_invalid(self):
