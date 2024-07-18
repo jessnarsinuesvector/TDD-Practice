@@ -24,3 +24,4 @@ class TestValidNumeralRepetitionLimit(TestCase):
 
     def test_can_validate_true_if_limit_is_not_violated(self):
         self.assertTrue(self.rule.is_valid("XXX"))
+        self.assertTrue(self.rule.is_valid("XXXIX"))

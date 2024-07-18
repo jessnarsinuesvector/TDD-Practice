@@ -17,6 +17,6 @@ class Validator:
         validation_result = True
         for rule in self.get_rules():
             if not rule.is_valid(input_str):
-                self.log.error("Input violation: {}".format(rule.description))
+                self.log.error("{} -> Input violation: {}".format(input_str, rule.description))
                 validation_result = False
         return validation_result
