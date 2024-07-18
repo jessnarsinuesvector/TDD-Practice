@@ -9,11 +9,14 @@ A time box of `20mins/day` is also very challenging. At first, I thought it woul
 
 
 In summary, the requirements were straight forward:
+
+`(an excerpt)`
 ```
 Exercise
 Converting Roman Numerals to Decimal
 
-Create a class with one method that converts a string of Roman numerals to a decimal number and returns that number as an integer.  You can assume that only correct Roman numerals will be presented.  The Roman numerals we will need to process are I, V, X, L, C, D and M
+Create a class with one method that converts a string of Roman numerals to a decimal number and returns that number as an integer.  
+You can assume that only correct Roman numerals will be presented.  The Roman numerals we will need to process are I, V, X, L, C, D and M
 - Jim Gildea, et al.
 ```
 
