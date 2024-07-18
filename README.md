@@ -21,7 +21,7 @@ You can assume that only correct Roman numerals will be presented.  The Roman nu
 ```
 
 Understanding how the rules work, identifying key aspects, and designing the flow is harder than I thought (and this is a simple exercise versus what we are actually doing at work). Asking relevant questions (monologues, yep.) during the design phase definitely improved the testability of the implementation.
-Generating the tests was so much easier when I had clarity in the design. 
+Generating the tests was so much easier when I had clarity in the specificity of how it should work and the design. 
 
 ---
 How to use:
