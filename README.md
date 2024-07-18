@@ -42,9 +42,9 @@ III -> 3
 IX -> 9
 XL -> 40
 DI -> 501
-MCMLXXXIX -> Input violation: Should follow valid Roman Numeral sequence.
+MCMLXXXIX -> 1989
 A -> Input violation: Should only contain valid Roman Numerals.
-IL -> 49
+IL -> Input violation: Should follow valid Roman Numeral sequence.
 IM -> Input violation: Should follow valid Roman Numeral sequence.
 VV -> Input violation: Should follow valid Roman Numeral sequence.
 VV -> Input violation: Should follow Roman Numeral repetition limit.
@@ -54,4 +54,5 @@ LL -> Input violation: Should follow Roman Numeral repetition limit.
 DD -> Input violation: Should follow valid Roman Numeral sequence.
 DD -> Input violation: Should follow Roman Numeral repetition limit.
 DMIMXL -> Input violation: Should follow valid Roman Numeral sequence.
+
 ```
