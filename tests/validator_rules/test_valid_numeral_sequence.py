@@ -25,7 +25,7 @@ class TestValidNumeralSequence(TestCase):
         self.assertFalse(self.rule.is_valid("XXL"))
 
     def test_can_validate_true_if_sequence_is_valid(self):
-        for i in ["XL", "IX"]:
+        for i in ["XL", "IX", "MCMLXXXIX"]:
             self.assertTrue(self.rule.is_valid(i))
 
     def test_can_validate_true_if_single_numeral_only(self):

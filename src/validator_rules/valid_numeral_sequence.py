@@ -22,7 +22,7 @@ class RuleValidNumeralSequence(Rule):
 
         # XC | XM -> False --- FFFFKKK TTHHIIIS!!!
         # HOW DO I MAKE A RULE OUT OF IT???
-        for i in ["IM", "XC", "XM"]:
+        for i in ["IL", "IM", "XC", "XM"]:
             if i in input_str:
                 return False
 
@@ -44,11 +44,8 @@ class RuleValidNumeralSequence(Rule):
 
             if i < max_len - 1:
                 right_val = input_values[i + 1]
-                if center_val > left_val:
-                    # XXL -> False
-                    if center_val >= right_val:
-                        validation_result = False
-                    if center_val < right_val and "5" in list(str(right_val)):
+                if left_val != right_val:
+                    if left_val < right_val:
                         validation_result = False
 
         return validation_result
