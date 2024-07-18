@@ -16,6 +16,7 @@ if __name__ == "__main__":
         "XL",
         "DI",
         "MCMLXXXIX",
+        "A",
         "IL",
         "IM",
         "VV",

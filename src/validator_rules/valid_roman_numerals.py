@@ -18,7 +18,6 @@ class RuleValidRomanNumerals(Rule):
         validation_result = True
         for i in input_str:
             if i not in self.numeral_map.keys():
-                self.log.error("{} is not a valid roman numeral!".format(i))
                 validation_result = False
 
         return validation_result
