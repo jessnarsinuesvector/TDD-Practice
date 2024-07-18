@@ -34,3 +34,24 @@ Run tests
 Run app
 > Edit main.py and modify input_str
 > python main.py
+
+Sample Execution
+```
+$ python main.py 
+III -> 3
+IX -> 9
+XL -> 40
+DI -> 501
+MCMLXXXIX -> Input violation: Should follow valid Roman Numeral sequence.
+A -> Input violation: Should only contain valid Roman Numerals.
+IL -> 49
+IM -> Input violation: Should follow valid Roman Numeral sequence.
+VV -> Input violation: Should follow valid Roman Numeral sequence.
+VV -> Input violation: Should follow Roman Numeral repetition limit.
+VX -> Input violation: Should follow valid Roman Numeral sequence.
+LL -> Input violation: Should follow valid Roman Numeral sequence.
+LL -> Input violation: Should follow Roman Numeral repetition limit.
+DD -> Input violation: Should follow valid Roman Numeral sequence.
+DD -> Input violation: Should follow Roman Numeral repetition limit.
+DMIMXL -> Input violation: Should follow valid Roman Numeral sequence.
+```
