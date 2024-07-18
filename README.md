@@ -5,6 +5,9 @@ The general approach was to validate the input then do the conversion afterward.
 Key takeaway from this activity was that it was generating tests would have been a lot easier if the design were as perfect as possible. Improper design caused the tests to be brittle and I had to do it from scratch.
 It is also worth noting that changes in-between are inevitable and this is where flexibility and simplicity in the design and implementation matters the most.
 
+A time box of 20mins/day is also very challenging. At first, I thought it would easy where I did this in parallel of other things but that only got in the way. I changed that by putting aside 20 mins with pure focus and had better results. I proved the point that Jim shared with us through the activity that he fostered: multitasking takes more time to get things finished versus a focused effort to finish one task at a time.
+
+
 In summary, the requirements were straight forward:
 
 Exercise
@@ -15,7 +18,7 @@ Create a class with one method that converts a string of Roman numerals to a dec
 
 
 Understanding how the rules work, identifying key aspects, and designing the flow is harder than I thought (and this is a simple exercise versus what we are actually doing at work). Asking relevant questions (monologues, yep.) during the design phase definitely improved the testability of the implementation.
-Generating the tests was so much easier when I had clarity in the design.
+Generating the tests was so much easier when I had clarity in the design. 
 
 ---
 How to use:
