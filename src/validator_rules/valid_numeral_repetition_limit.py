@@ -26,8 +26,6 @@ class RuleValidNumeralRepetitionLimit(Rule):
                 if current_char in self.restricted_to_one and current_count > 1:
                     validation_result = False
             else:
-                if current_count > self.limit:
-                    validation_result = False
                 current_char = char
                 current_count = 1
 

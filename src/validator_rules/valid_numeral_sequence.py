@@ -37,8 +37,6 @@ class RuleValidNumeralSequence(Rule):
             if "5" in list(str(center_val)):
                 if center_val == left_val:
                     validation_result = False
-                elif left_val < (center_val / 2):
-                    validation_result = False
             # VX -> False
             elif "5" in list(str(left_val)):
                 if center_val > left_val:

@@ -13,6 +13,7 @@ if __name__ == "__main__":
     input_strs = [
         "III",
         "IX",
+        "XL",
         "DI",
         "MCMLXXXIX",
         "IL",
