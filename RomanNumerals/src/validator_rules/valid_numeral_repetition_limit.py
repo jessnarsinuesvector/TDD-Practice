@@ -1,8 +1,8 @@
 import logging
 from collections import Counter
 
-from src.validator_rules.rule import Rule
-from src.utils import Utils
+from RomanNumerals.src.validator_rules.rule import Rule
+from RomanNumerals.src.utils import Utils
 
 
 class RuleValidNumeralRepetitionLimit(Rule):

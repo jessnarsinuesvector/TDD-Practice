@@ -1,6 +1,7 @@
 from unittest import TestCase
 
-from src.validator_rules.rule import Rule
+from RomanNumerals.src.validator_rules.rule import Rule
+
 
 class TestAbstractRuleClass(TestCase):
     def setUp(self):

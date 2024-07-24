@@ -10,14 +10,14 @@ A time box of `20mins/day` is also very challenging. At first, I thought it woul
 
 In summary, the requirements were straight forward:
 
-`(an excerpt)`
+`(a snippet)`
 ```
 Exercise
 Converting Roman Numerals to Decimal
 
 Create a class with one method that converts a string of Roman numerals to a decimal number and returns that number as an integer.  
 You can assume that only correct Roman numerals will be presented.  The Roman numerals we will need to process are I, V, X, L, C, D and M
-- Jim Gildea, et al.
+- Jim Gildea, et. al.
 ```
 
 Understanding how the rules work, identifying key aspects, and designing the flow is harder than I thought (and this is a simple exercise versus what we are actually doing at work). Asking relevant questions (monologues, yep.) during the design phase definitely improved the testability of the implementation.

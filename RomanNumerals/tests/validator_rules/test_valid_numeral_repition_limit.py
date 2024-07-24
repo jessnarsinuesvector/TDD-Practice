@@ -1,8 +1,8 @@
 from pathlib import Path
 from unittest import TestCase
 
-from src.validator_rules.valid_numeral_repetition_limit import RuleValidNumeralRepetitionLimit
-from src.utils import Utils
+from RomanNumerals.src.validator_rules.valid_numeral_repetition_limit import RuleValidNumeralRepetitionLimit
+from RomanNumerals.src.utils import Utils
 
 
 class TestValidNumeralRepetitionLimit(TestCase):
@@ -23,5 +23,5 @@ class TestValidNumeralRepetitionLimit(TestCase):
         self.assertFalse(self.rule.is_valid("LL"))
 
     def test_can_validate_true_if_limit_is_not_violated(self):
-        for i in ["XXX", "XXXIX"]:
+        for i in ["X", "XXX", "XXXIX"]:
             self.assertTrue(self.rule.is_valid(i))

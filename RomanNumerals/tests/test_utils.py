@@ -1,7 +1,7 @@
 from unittest import TestCase, mock
 from unittest.mock import patch
 
-from src.utils import Utils
+from RomanNumerals.src.utils import Utils
 
 
 class TestUtils(TestCase):

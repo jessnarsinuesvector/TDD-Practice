@@ -1,8 +1,8 @@
 from pathlib import Path
 from unittest import TestCase
 
-from src.validator_rules.valid_roman_numerals import RuleValidRomanNumerals
-from src.utils import Utils
+from RomanNumerals.src.validator_rules.valid_roman_numerals import RuleValidRomanNumerals
+from RomanNumerals.src.utils import Utils
 
 
 class TestRuleValidRomanNumerals(TestCase):

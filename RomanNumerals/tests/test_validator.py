@@ -1,7 +1,7 @@
 from unittest import TestCase, mock
 
-from src.validator_rules.rule import Rule
-from src.validator import Validator
+from RomanNumerals.src.validator_rules.rule import Rule
+from RomanNumerals.src.validator import Validator
 
 class TestValidator(TestCase):
 

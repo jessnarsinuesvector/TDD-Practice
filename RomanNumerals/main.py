@@ -11,20 +11,38 @@ from src.validator_rules.valid_roman_numerals import RuleValidRomanNumerals
 if __name__ == "__main__":
 
     input_strs = [
+        # "III",
+        # "IX",
+        # "XL",
+        # "DI",
+        # "MCMLXXXIX",
+        # "A",
+        # "IL",
+        # "IM",
+        # "VV",
+        # "VX",
+        # "LL",
+        # "DD",
+        # "DM"
+        # "IMXL"
+        "I",
+        "II",
         "III",
+        "IV",
+        "V",
+        "VI",
+        "VII",
         "IX",
-        "XL",
-        "DI",
-        "MCMLXXXIX",
-        "A",
+        "X",
+        "XI",
+        "XX",
         "IL",
-        "IM",
-        "VV",
-        "VX",
-        "LL",
-        "DD",
-        "DM"
-        "IMXL"
+        "L",
+        "C",
+        "D",
+        "M",
+        "MCMLXXXIX",
+        "XLIX"
     ]
 
 
