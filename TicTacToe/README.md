@@ -28,3 +28,6 @@ each click in UI row x column will
     3. Check if
         3.1 All slots are already taken
         3.2 A 3-in-a-row has been made
+
+Sample Execution
+> python main.py
