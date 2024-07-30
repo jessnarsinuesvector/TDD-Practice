@@ -22,3 +22,17 @@ Solution
 Essentially, we will be reducing the number by dividing it to numbers from 2 to number/2. Any number higher than number/2 - except the number itself - will not yield any acceptable factors that will yield 0 remainders.
 e.g. 100 -> factors will be in the range[2,50]. Anything above it until number - 1(51,52,53.....99) will not be a factor of 100.
 Number is given -> get all factors -> check if it is prime -> add it to a prime_factor list -> get the quotient -> repeat until the quotient becomes a prime number -> add it to the prime_factor list.
+
+How to use:
+Install all needed python modules
+> pip install -r requirements
+
+Run tests
+> pytest --cov=src --cov-report=html
+
+Run app
+> Edit main.py and modify input_str
+> python main.py
+
+Sample Execution
+> python main.py

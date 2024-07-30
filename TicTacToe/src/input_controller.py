@@ -11,7 +11,7 @@ class InputController:
 
     def set_slot_state(self, input_str: str, slot_num: int):
         if self.get_slot_state()[slot_num] != "":
-            raise IOError("Slot #{} is not empty!")
+            raise IOError("Slot #{} is not empty!".format(slot_num))
         try:
             self.__slot_state[slot_num] = input_str
         except IndexError as e:
