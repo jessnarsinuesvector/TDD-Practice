@@ -6,9 +6,6 @@ sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
 from TicTacToe.src.input_controller import InputController
 from TicTacToe.src.result_checker import ResultChecker
-
-sys.path.append(os.path.dirname(os.path.dirname(__file__)))
-
 from TicTacToe.src.gui import GUI
 
 if __name__ == '__main__':
